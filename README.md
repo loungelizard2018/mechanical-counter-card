@@ -36,13 +36,13 @@ The HACS resource path is:
 
 ## Manual installation
 
-Copy `mechanical-counter-card.js` to:
+Download the release and copy **all JavaScript files** into the same directory:
 
 ```text
-/config/www/mechanical-counter-card/mechanical-counter-card.js
+/config/www/mechanical-counter-card/
 ```
 
-Register it as a JavaScript module:
+The main module and its imported modules must remain together in that directory. Register only the main file as a JavaScript module:
 
 ```text
 /local/mechanical-counter-card/mechanical-counter-card.js
