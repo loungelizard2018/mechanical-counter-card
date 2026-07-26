@@ -7,7 +7,8 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   validate-hacs:
@@ -24,6 +25,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
       - name: Check JavaScript syntax
-        run: node --check mechanical-counter-card.js
+        run: find . -maxdepth 1 -name '*.js' -print0 | xargs -0 -n1 node --check
       - name: Check HACS manifest JSON
         run: python -m json.tool hacs.json > /dev/null
