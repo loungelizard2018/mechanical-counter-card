@@ -1,6 +1,6 @@
 /**
  * Mechanical Counter Card for Home Assistant
- * Version: 1.4.1
+ * Version: 1.4.2
  */
 
 import { configMethods } from "./mechanical-counter-config.js";
@@ -8,7 +8,7 @@ import { renderMethods } from "./mechanical-counter-render.js";
 import { updateMethods } from "./mechanical-counter-update.js";
 import { utilityMethods } from "./mechanical-counter-utils.js";
 
-const MECHANICAL_COUNTER_VERSION = "1.4.1";
+const MECHANICAL_COUNTER_VERSION = "1.4.2";
 
 class MechanicalCounterCard extends HTMLElement {
 constructor() {
