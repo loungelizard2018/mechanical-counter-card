@@ -89,6 +89,13 @@ export default String.raw`
           calc(25px * var(--counter-scale));
       }
 
+      .counter-assembly.frame-gauge-black {
+        padding:
+          calc(24px * var(--counter-scale))
+          calc(48px * var(--counter-scale))
+          calc(25px * var(--counter-scale));
+      }
+
       .frame-silver {
         border:
           calc(1px * var(--counter-scale))
