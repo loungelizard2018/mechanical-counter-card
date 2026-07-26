@@ -1,0 +1,15 @@
+type: custom:mechanical-counter-card
+entity: sensor.ram_usage
+integer_digits: 6
+decimals: 1
+label: RAM
+unit: "%"
+
+# Default: automatically shrink the complete card to the available column width.
+fit_to_card: true
+
+frame: gauge_black
+screws: true
+integer_color: "#f3f3ed"
+decimal_color: "#d52b2b"
+meta_color: "#dedede"
