@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.1
+
+- Replaced the three corrupted corner screw assets with one verified clean gauge screw asset.
+- Rotated the clean screw asset per corner to preserve directional lighting.
+- Clipped the screw image edges to remove stray coloured pixels.
+- Kept the gauge housing padding identical whether `screws` is enabled or disabled.
+- Replaced the synthetic README preview with a real browser-rendered screenshot of the card.
+
 ## 1.4.0
 
 - Added automatic responsive fitting using `ResizeObserver`.
