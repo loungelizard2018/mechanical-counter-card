@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.2
+
+- Removed the unreliable bitmap screw rendering.
+- Added four deterministic CSS-rendered black cross-head screws with metallic depth and individual slot angles.
+- Eliminated the corrupted top-left screw, missing corner screws and coloured edge artefacts.
+- Preserved the fixed gauge housing geometry and responsive fitting behaviour.
+
 ## 1.4.1
 
 - Replaced the three corrupted corner screw assets with one verified clean gauge screw asset.
