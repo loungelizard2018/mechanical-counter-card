@@ -1,0 +1,26 @@
+type: custom:mechanical-counter-card
+fit_to_card: true
+allow_upscale: false
+transparent_card: true
+frame: gauge_black
+screws: true
+screw_size: 28
+integer_color: "#f3f3ed"
+decimal_color: "#d52b2b"
+meta_color: "#dedede"
+animation: true
+animation_duration: 720
+animation_stagger: 45
+
+registers:
+  - entity: sensor.stromzaehler_ht
+    label: HT
+    unit: kWh
+    integer_digits: 6
+    decimals: 1
+
+  - entity: sensor.stromzaehler_nt
+    label: NT
+    unit: kWh
+    integer_digits: 7
+    decimals: 0
