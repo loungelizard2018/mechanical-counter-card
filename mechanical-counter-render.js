@@ -73,6 +73,7 @@ export const renderMethods = {
           --unit-color: ${this._safeCssColor(register.unit_color, "#dedede")};
           --screw-size: ${register.screw_size}px;
           --animation-duration: ${register.animation_duration}ms;
+          --housing-texture: url('${this._asset("housing-texture.webp")}');
         "
       >
         <div class="register-stage">
