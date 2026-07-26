@@ -2,7 +2,7 @@
 
 Fotorealistisches mechanisches Zählwerk für Home Assistant mit dem schwarzen Gehäuse und den schwarzen Kreuzschrauben der analogen Gauge.
 
-![Vorschau](images/dashboard-preview.svg)
+![Vorschau](images/dashboard-screenshot.svg)
 
 ## HACS-Installation
 
