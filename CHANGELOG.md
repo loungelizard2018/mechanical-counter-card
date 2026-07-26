@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.3
+
+- Added explicit version query strings to every ES module import.
+- Prevented Home Assistant and browser caches from mixing a new entry module with stale render or style modules.
+- Removed the final unused bitmap screw asset from the repository.
+- Ensured the four CSS-rendered cross-head screws are loaded after every HACS update.
+
 ## 1.4.2
 
 - Removed the unreliable bitmap screw rendering.
