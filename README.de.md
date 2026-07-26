@@ -12,6 +12,22 @@ Fotorealistisches mechanisches Zählwerk für Home Assistant mit dem schwarzen G
 4. Kategorie **Dashboard** auswählen.
 5. Karte installieren und das Frontend neu laden.
 
+## Manuelle Installation
+
+Alle JavaScript-Dateien eines Releases gemeinsam nach
+
+```text
+/config/www/mechanical-counter-card/
+```
+
+kopieren. Die Hauptdatei importiert weitere Module; deshalb reicht es nicht, nur `mechanical-counter-card.js` zu kopieren.
+
+Als Ressource wird ausschließlich die Hauptdatei registriert:
+
+```text
+/local/mechanical-counter-card/mechanical-counter-card.js
+```
+
 ## Automatische Größenanpassung
 
 ```yaml
@@ -20,6 +36,8 @@ allow_upscale: false
 ```
 
 Das vollständige Element wird proportional auf die tatsächlich verfügbare Spaltenbreite verkleinert. Gehäuse, Schrauben, Anzeige, Beschriftung und Schatten bleiben dabei zusammen. Die Kartenhöhe wird ebenfalls korrigiert, sodass nichts in eine Nachbarspalte hineinragt.
+
+Die Gehäuseabstände bleiben auch bei `screws: false` identisch. Dadurch wird das Zählwerk nicht mehr vergrößert und ragt nicht in den Rahmen hinein.
 
 ## Beispiel
 
