@@ -1,0 +1,9 @@
+# Local/editor files
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Local test output
+responsive-test.png
+test-responsive.html
