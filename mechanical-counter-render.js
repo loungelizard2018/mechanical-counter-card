@@ -108,10 +108,10 @@ export const renderMethods = {
 
   _renderScrews() {
     return `
-      <img class="screw screw-top-left" src="${this._asset("screw-master.webp")}" alt="" aria-hidden="true">
-      <img class="screw screw-top-right" src="${this._asset("screw-master.webp")}" alt="" aria-hidden="true">
-      <img class="screw screw-bottom-left" src="${this._asset("screw-master.webp")}" alt="" aria-hidden="true">
-      <img class="screw screw-bottom-right" src="${this._asset("screw-master.webp")}" alt="" aria-hidden="true">
+      <div class="screw screw-top-left" aria-hidden="true"></div>
+      <div class="screw screw-top-right" aria-hidden="true"></div>
+      <div class="screw screw-bottom-left" aria-hidden="true"></div>
+      <div class="screw screw-bottom-right" aria-hidden="true"></div>
     `;
   },
 
