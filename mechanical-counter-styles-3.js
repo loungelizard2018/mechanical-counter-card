@@ -42,6 +42,8 @@ export default String.raw`
         width: calc(var(--screw-size) * var(--counter-scale));
         height: calc(var(--screw-size) * var(--counter-scale));
         object-fit: contain;
+        image-rendering: auto;
+        clip-path: circle(48% at 50% 50%);
         pointer-events: none;
         filter:
           saturate(.96)
@@ -52,21 +54,25 @@ export default String.raw`
       .screw-top-left {
         top: calc(9px * var(--counter-scale));
         left: calc(9px * var(--counter-scale));
+        transform: rotate(-90deg);
       }
 
       .screw-top-right {
         top: calc(9px * var(--counter-scale));
         right: calc(9px * var(--counter-scale));
+        transform: rotate(0deg);
       }
 
       .screw-bottom-left {
         bottom: calc(9px * var(--counter-scale));
         left: calc(9px * var(--counter-scale));
+        transform: rotate(180deg);
       }
 
       .screw-bottom-right {
         bottom: calc(9px * var(--counter-scale));
         right: calc(9px * var(--counter-scale));
+        transform: rotate(90deg);
       }
 
       @media (max-width: 600px) {
