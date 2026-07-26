@@ -6,7 +6,7 @@
 A photorealistic mechanical odometer-style counter card for Home Assistant.
 It uses the same black textured housing and black cross-head screws as the matching analog gauge card.
 
-![Mechanical Counter Card dashboard preview](images/dashboard-preview.png)
+![Mechanical Counter Card dashboard preview](images/dashboard-preview.svg)
 
 ## Features
 
