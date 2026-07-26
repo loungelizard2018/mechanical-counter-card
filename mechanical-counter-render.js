@@ -1,4 +1,4 @@
-import { MECHANICAL_COUNTER_GAUGE_ASSETS } from "./gauge-assets.js";
+import { MECHANICAL_COUNTER_GAUGE_ASSETS } from "./gauge-assets.js?v=1.4.3";
 
 export const renderMethods = {
   _render() {
