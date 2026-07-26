@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mechanical Counter Card demo</title>
+  <style>
+    body { margin: 0; padding: 24px; display: grid; gap: 24px; background: #0c0f13; font-family: Arial, sans-serif; }
+    .column { width: min(var(--width), 100%); border: 1px dashed #59616b; }
+    mechanical-counter-card { display: block; width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="column" style="--width: 680px"><mechanical-counter-card id="wide"></mechanical-counter-card></div>
+  <div class="column" style="--width: 360px"><mechanical-counter-card id="narrow"></mechanical-counter-card></div>
+  <script src="./mechanical-counter-card.js"></script>
+  <script>
+    const config = {
+      entity: "sensor.demo",
+      integer_digits: 6,
+      decimals: 1,
+      label: "RAM",
+      unit: "%",
+      fit_to_card: true,
+      frame: "gauge_black",
+      screws: true
+    };
+    const hass = { states: { "sensor.demo": { state: "13.8", attributes: { unit_of_measurement: "%" } } } };
+    for (const id of ["wide", "narrow"]) {
+      const card = document.getElementById(id);
+      card.setConfig(config);
+      card.hass = hass;
+    }
+  </script>
+</body>
+</html>
