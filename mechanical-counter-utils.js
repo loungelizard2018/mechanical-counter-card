@@ -1,4 +1,4 @@
-import { MECHANICAL_COUNTER_STYLES } from "./mechanical-counter-styles.js";
+import { MECHANICAL_COUNTER_STYLES } from "./mechanical-counter-styles.js?v=1.4.3";
 
 export const utilityMethods = {
   _boundedInteger(value, min, max, fallback) {
